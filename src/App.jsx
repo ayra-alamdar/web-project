@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import "./NavigationBar.css"; // Import CSS file for styling
 
 // importing components from react-router-dom package
 import {
@@ -11,6 +12,9 @@ import {
 
 
 import LoginPage from './LoginPage'
+import StudentHome from './StudentHome'
+import StudentStatusPage from './StudentStatusPage'
+
 
 function App() {
 
@@ -30,7 +34,9 @@ function App() {
       <Router>
           <Routes>
               <Route path="/login" element={<LoginPage />} />
-              <Route path="*" element={<Navigate to="/login" />} />
+              <Route path="/" element={<Navigate to="/login" />} />
+              <Route path="/StudentHome" element={<StudentHome />} />
+              <Route path="/StudentStatusPage" element={<StudentStatusPage />} />
           </Routes>
       </Router>
 
