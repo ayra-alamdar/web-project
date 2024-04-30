@@ -11,6 +11,7 @@ import {
 
 
 import LoginPage from './LoginPage'
+import StudentHome from './StudentHome'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Routes>
               <Route path="/login" element={<LoginPage />} />
               <Route path="/" element={<Navigate to="/login" />} />
+              <Route path="/StudentHome" element={<StudentHome />} />
           </Routes>
       </Router>
 
