@@ -12,6 +12,7 @@ import {
 
 import LoginPage from './LoginPage'
 
+
 function App() {
 
   const [data, setData] = useState([])
@@ -30,7 +31,7 @@ function App() {
       <Router>
           <Routes>
               <Route path="/login" element={<LoginPage />} />
-              <Route path="*" element={<Navigate to="/login" />} />
+              <Route path="/" element={<Navigate to="/login" />} />
           </Routes>
       </Router>
 
