@@ -6,3 +6,8 @@
 ## Links
 1. https://www.youtube.com/watch?v=2hR-uWjBAgw
 2. 
+
+
+### Commands
+1. npm install -g react-devtools
+2. 
